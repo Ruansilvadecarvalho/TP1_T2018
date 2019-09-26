@@ -5,6 +5,8 @@
  */
 package br.edu.iff.teste.heranca;
 
+import java.util.Date;
+
 /**
  *
  * @author samsung
@@ -34,6 +36,7 @@ public class OqEhHeranca {
         
         //a1.podeSolicitarDiploma();
         a2.podeSolicitarDiploma();
+        a2.dtNascimento = new Date();
         a2.idade();
     }
     

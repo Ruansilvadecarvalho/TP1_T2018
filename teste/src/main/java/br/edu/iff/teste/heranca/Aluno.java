@@ -34,10 +34,8 @@ public abstract class Aluno {
         }
         
     }
-    public abstract boolean podeSolicitarDiploma();
-
     
-    public boolean SolicitarDiploma() {
+    public boolean podeSolicitarDiploma() {
         return tdsDisciplinas && tdDocumentacao;
     }
     

@@ -10,12 +10,9 @@ public class AlunoConcomitante extends Aluno {
     String escolaEM;
     boolean apresentouCertificadoEM;
     
+    @Override
     public boolean podeSolicitarDiploma() {
-        if (apresentouCertificadoEM) {
-            return true;
-        } else {
-            return false;
-        }
+        return apresentouCertificadoEM && super.podeSolicitarDiploma();
     }
 
 }
