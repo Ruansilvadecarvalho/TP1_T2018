@@ -20,7 +20,12 @@ public class OqEhHeranca {
         z = y;
         //x = y;
         
-        Aluno a1 = new Aluno();
+        Aluno a1 = new Aluno() {
+            @Override
+            public boolean podeSolicitarDiploma() {
+                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            }
+        };
         AlunoConcomitante a2 = new AlunoConcomitante();
         AlunoIntegrado a3 = new AlunoIntegrado();
         a1 = a2;

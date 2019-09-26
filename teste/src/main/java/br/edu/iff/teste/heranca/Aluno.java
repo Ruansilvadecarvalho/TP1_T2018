@@ -8,12 +8,14 @@ import java.util.Date;
  *
  * @author luizcanf
  */
-public class Aluno {
+public abstract class Aluno {
 
     String nome;
     Date dtNascimento;
     long matricula, rendaFamiliar;
     Endereco endResidencial;
+    boolean tdsDisciplinas;
+    boolean tdDocumentacao;
     
     public int idade() {
         Date hoje = new Date();
@@ -32,4 +34,11 @@ public class Aluno {
         }
         
     }
+    public abstract boolean podeSolicitarDiploma();
+
+    
+    public boolean SolicitarDiploma() {
+        return tdsDisciplinas && tdDocumentacao;
+    }
+    
 }
